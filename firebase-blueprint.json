@@ -1,0 +1,23 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile and spin tracking",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "lastDailySpinReset": { "type": "number", "description": "Timestamp of last daily spin reset" },
+        "dailySpinsRemaining": { "type": "number", "description": "Number of daily free spins remaining" }
+      },
+      "required": ["uid", "email"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User documents"
+    }
+  }
+}

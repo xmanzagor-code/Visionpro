@@ -1,0 +1,41 @@
+{
+  "name": "visionpro-ai",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "tsc --noEmit",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@google/genai": "^1.29.0",
+    "canvas-confetti": "^1.9.4",
+    "clsx": "^2.1.1",
+    "dotenv": "^17.2.3",
+    "ethers": "^6.16.0",
+    "firebase": "^12.11.0",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.0.0",
+    "react-compare-slider": "^4.0.0",
+    "react-dom": "^19.0.0",
+    "react-image-crop": "^11.0.10",
+    "tailwind-merge": "^3.5.0",
+    "vite": "^6.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/canvas-confetti": "^1.6.4",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.0"
+  }
+}
