@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { ethers } from "ethers";
 
-const ai = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
+const ai = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY || "");
 
 export async function removeBackground(base64Image: string): Promise<string> {
   try {
